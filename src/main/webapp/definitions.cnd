@@ -1,0 +1,11 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+[jnt:chartTable] > jnt:content, jmix:siteComponent
+- text (string, richtext) = "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 200px;\"><thead><tr><th scope=\"col\">Column A</th><th scope=\"col\">Column B</th></tr></thead><tbody><tr><td>Value 2010</td><td>150</td></tr><tr><td>Value 2011</td><td>125</td></tr></tbody></table>"
+- display (boolean) = true
+
+[jnt:chart] > jnt:content, jmix:siteComponent, jmix:bindedComponent
+- width (long) = 600
+- height (long) = 500
+- type (string,choicelist[resourceBundle]) = Column3D indexed=no < Area2D, Bar2D, Column2D, Column3D, Doughnut2D, Funnel, Line, Pie2D, Pie3D
